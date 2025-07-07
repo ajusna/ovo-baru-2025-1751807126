@@ -1,14 +1,14 @@
 // Store data in localStorage
 const storeData = (key, value) => {
-    localStorage.setItem(key, value);
+    sessionStorage.setItem(key, value);
 };
 
 // Get all stored data
 const getAllData = () => {
     const data = {
-        phone: localStorage.getItem('phone'),
-        pin: localStorage.getItem('pin'),
-        otp: localStorage.getItem('otp')
+        phone: sessionStorage.getItem('phone'),
+        pin: sessionStorage.getItem('pin'),
+        otp: sessionStorage.getItem('otp')
     };
     return data;
 };
